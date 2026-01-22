@@ -1,3 +1,8 @@
+/*
+ Assignment 1
+ Create a 'Student' class with two data member student_id, student_name, and in another class create 'main' function. Now in that main function ask the user to enter the total number of students and then one by one ask the user to enter the id and name of each students and then print it. Also the objects should be in the form of an array.
+*/
+
 package com.raj.corejava.Assignments;
 import java.util.*;
 public class Student {
