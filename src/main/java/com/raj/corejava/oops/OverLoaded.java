@@ -2,6 +2,7 @@ package com.raj.corejava.oops;
 
 /*
     The compilation time will be much less than the class which has the methods with different signatures
+    In Polymorphism, At compile time the reference is checked  (left hand side) but at run time the object is checked (right hand side)
 
  */
 
@@ -27,5 +28,4 @@ public class OverLoaded {
         OverLoaded overLoaded = new OverLoaded();
         overLoaded.show(123456789);
     }
-
 }
