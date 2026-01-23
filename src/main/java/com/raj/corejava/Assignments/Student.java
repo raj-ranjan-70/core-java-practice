@@ -7,7 +7,9 @@
 */
 
 package com.raj.corejava.Assignments;
+
 import java.util.*;
+
 public class Student {
     private int student_id;
     private String student_name;
