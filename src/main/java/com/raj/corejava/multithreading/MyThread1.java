@@ -7,13 +7,9 @@ public class MyThread1 extends Thread{
         this.Task = Task;
     }
 
-    public void operations() {
-        System.out.println(this.Task);
-    }
-
     @Override
     public void run() {
-        operations();
+        System.out.println(this.Task);
     }
 
     public static void main(String[] args) {
