@@ -1,4 +1,4 @@
-package com.raj.corejava.oops;
+package com.raj.corejava.exceptions;
 
 import java.util.Scanner;
 
