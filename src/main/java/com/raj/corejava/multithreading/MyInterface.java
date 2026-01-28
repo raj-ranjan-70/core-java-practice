@@ -1,37 +1,27 @@
 package com.raj.corejava.multithreading;
 
-public class MyInterface {
+public class MyInterface implements  Runnable {
 
-    public static void printHello() {
-        System.out.println("Hello World!!!");
+    String Task;
+    MyInterface(String Task) {
+        this.Task = Task;
     }
 
-    public static void printName() {
-        System.out.println("Hello Raj");
+    @Override
+    public void run() {
+        System.out.println(Task);
     }
-
-    public static void printHii() {
-        System.out.println("Hii There");
-    }
-
-
 
     public static void main(String[] args) {
-        Runnable r1 = () -> {
-            printHello();
-        };
 
-        Runnable r2 = () -> {
-            printName();
-        };
+        MyInterface task1 = new MyInterface("Hii, There");
+        MyInterface task2 = new MyInterface("Hello World!!!");
+        MyInterface task3 = new MyInterface("Hello, Raj");
 
-        Runnable r3 = () -> {
-            printHii();
-        };
 
-        Thread t1 = new Thread(r1);
-        Thread t2 = new Thread(r2);
-        Thread t3 = new Thread(r3);
+        Thread t1 = new Thread(task1);
+        Thread t2 = new Thread(task2);
+        Thread t3 = new Thread(task3);
 
         t1.start();
         t2.start();
