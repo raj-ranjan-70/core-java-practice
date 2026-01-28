@@ -1,6 +1,6 @@
 package com.raj.corejava.multithreading;
 
-public class MyInterface implements  Runnable {
+public class MyInterface implements Runnable {
 
     String Task;
     MyInterface(String Task) {
@@ -17,7 +17,6 @@ public class MyInterface implements  Runnable {
         MyInterface task1 = new MyInterface("Hii, There");
         MyInterface task2 = new MyInterface("Hello World!!!");
         MyInterface task3 = new MyInterface("Hello, Raj");
-
 
         Thread t1 = new Thread(task1);
         Thread t2 = new Thread(task2);
