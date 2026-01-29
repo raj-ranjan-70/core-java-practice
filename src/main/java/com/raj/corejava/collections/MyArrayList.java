@@ -1,5 +1,6 @@
 package com.raj.corejava.collections;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MyArrayList {
@@ -63,9 +64,6 @@ public class MyArrayList {
         System.out.println();
     }
 
-
-
-
     public static void main(String[] args) {
 
         MyArrayList list = new MyArrayList();
@@ -75,19 +73,24 @@ public class MyArrayList {
         list.add(30);
         list.add(40);
         list.add(50);
+        list.add(60);
+        list.add(70);
+        list.add(80);
+        list.add(90);
 
         list.display();
 
-        System.out.println("Element at index 2: " + list.get(2));
+        System.out.println("Element at index 2, new index 2 is: " + list.get(2));
 
         list.set(2, 999);
-        System.out.println("After setting index 2: " + list.get(2));
+        System.out.println("After setting index 2, new index 2 is: " + list.get(2));
 
         list.display();
 
         list.delete(3);
-        System.out.println("After deleting index 3: " + list.get(3));
+        System.out.println("After deleting index 3:");
         list.display();
+
     }
 
 
