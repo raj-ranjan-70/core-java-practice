@@ -1,6 +1,7 @@
 package com.raj.corejava.Assignments;
 
 import java.util.ArrayList;
+import java.util.regex.Pattern;
 
 public class MyCollection1 {
     public static boolean isValidWord(String str) {
@@ -30,7 +31,7 @@ public class MyCollection1 {
 
 
         for(int i=words.size() - 1;i>=0;i--) {
-            if(!isValidWord(words.get(i))) {
+            if(!Pattern.matches("^[A-Za-z]{1,4}$", words.get(i))) {
                 words.remove(i);
             }
         }
